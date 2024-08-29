@@ -1,0 +1,44 @@
+class ShoppingList:
+    def shopl_(shoplist):
+        
+        shoplist.items = []
+    def add_item(shoplist, item: str):
+        if item not in shoplist.items:
+            shoplist.items.append(item)
+            print(f"Added item '{item}' ")
+        else:
+            print(f"Item'{item}' is already in  list.")
+
+    def remove_item(shoplist, item: str):
+        if item in items:
+            shoplist.items.remove(item)
+            print(f"Removed item '{item}' .")
+        else:
+            print(f"Item '{item}' is not in list.")
+
+    def search_item(shoplist, item: str) -> bool:
+        if item in shoplist.items:
+            print(f"Item'{item}' is on  list.")
+            return True
+        else:
+            print(f"Item'{item}' is not on list.")
+            return False
+            
+    def display_list(shoplist):
+       
+        if shoplist.items:
+            print("Current shopping list:")
+            for item in shoplist.items:
+                print(f"- {item}")
+        else:
+            print("empty")
+if __name__ == "__main__":
+    my_list = shoplist.items()
+
+    my_list.add_item("TEA")
+
+    my_list.display_list()
+
+    my_list.search_item("BACON")
+
+    my_list.remove_item("BACON")
